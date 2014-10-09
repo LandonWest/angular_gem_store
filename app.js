@@ -6,6 +6,24 @@
     this.products = gems;
   });
 
+  app.controller('PanelController', function(){
+    this.tab = 1;
+    this.selectTab = function(setTab) {
+      this.tab = setTab;
+    };
+
+    this.isSelected = function(checkTab) {
+      return this.tab === checkTab;
+    };
+  });
+
+  app.controller('GalleryController', function(){
+  	this.current = 0;
+    this.setCurrent = function(newGallery){
+    	this.current = newGallery || 0;
+    };
+  });
+
   var gems = [
     {
       name: 'Dodecahedron',
@@ -35,17 +53,5 @@
       ]
     }
   ];
-
-  app.controller('PanelController', function(){
-    this.tab = 1;
-
-    this.selectTab = function(setTab) {
-      this.tab = setTab;
-    };
-
-    this.isSelected = function(checkTab) {
-      return this.tab === checkTab;
-    };
-  });
 
 })();
