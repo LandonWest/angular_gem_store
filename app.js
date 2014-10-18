@@ -36,7 +36,18 @@
           full: "img/dodecahedron-01-full.jpg",
           thumb: "img/dodecahedron-01-thumb.jpg"
         }
-      ]
+      ],
+      reviews: [{
+        stars: 5,
+        body: "This gem is amazing!",
+        author: "fred@example.com",
+        createdOn: 1397490980837
+      }, {
+        stars: 3,
+        body: "It really wansn't as shiny as I would have expected for the price.",
+        author: "biannca@example.com",
+        createdOn: 1397490980837
+      }]
     },
 
     {
@@ -50,7 +61,18 @@
           full: "img/dodecahedron-02-full.jpg",
           thumb: "img/dodecahedron-02-thumb.jpg"
         }
-      ]
+      ],
+      reviews: [{
+        stars: 4,
+        body: "I am really happy with this purchase, thak you!",
+        author: "anniew@example.com",
+        createdOn: 1397490980837
+      }, {
+        stars: 1,
+        body: "How can you guys sleep at night, peddling this crap?",
+        author: "hater_j@example.com",
+        createdOn: 1397490980837
+      }]
     }
   ];
 
