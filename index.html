@@ -86,7 +86,7 @@
               <h4>Submit a Review</h4>
               <fieldset class="form-group">
                 <!-- <select ng-modal="reviewCtrl.review.stars" class="form-control" title="Stars"> -->
-                <select ng-modal="reviewCtrl.review.stars" class="form-control" ng-options="stars for stars in [5,4,3,2,1]" title="Stars">
+                <select ng-model="reviewCtrl.review.stars" class="form-control" ng-options="stars for stars in [5,4,3,2,1]" title="Stars">
                   <option value="">Rate the Product</option>
                   <!-- <option value="1">1 star</option>
                   <option value="2">2 stars</option>
@@ -96,7 +96,7 @@
                 </select>
               </fieldset>
               <fieldset class="form-group">
-                <textarea ng-modal="reviewCtrl.review.body" class="form-control" placeholder="Write a short review of the product..." title="Review"></textarea>
+                <textarea ng-model="reviewCtrl.review.body" class="form-control" placeholder="Write a short review of the product..." title="Review"></textarea>
               </fieldset>
               <fieldset class="form-group">
                 <input ng-model="reviewCtrl.review.author" type="email" class="form-control" placeholder="johndoe@example.com" title="Email"/>
