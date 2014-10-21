@@ -1,4 +1,4 @@
 angular_gem_store
 =================
 
-practice store using angular.js, following tutorial example on www.codeschool.com
+Practice store using angular.js and twitter bootstrap. Follow tutorial example on www.codeschool.com
