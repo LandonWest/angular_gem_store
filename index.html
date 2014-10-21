@@ -66,9 +66,9 @@
               <h4>Reviews</h4>
               <li ng-repeat="review in product.reviews">
                 <blockquote>
-                  <strong>Stars: {{review.stars}}</strong>
+                  <strong>{{review.stars}} Stars</strong>
                   "{{review.body}}"
-                  <cite class="clearfix">-{{review.author}}</cite>
+                  <cite class="clearfix"><small>{{review.author}} on {{review.createdOn | date:'MM/dd/yyyy @ h:mma'}}</small></cite>
                 </blockquote>
               </li>
             </ul>
